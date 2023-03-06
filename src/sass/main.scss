@@ -52,11 +52,9 @@ nav {
     margin-right: 1rem;
     background: hsl(0, 0%, 95%);
     padding: 1rem 1rem;
-    border-left: solid;
-    border-top: solid;
     border-right: solid;
     border-color: $lightGrey;
-    border-width: 1px;
+    border-width: 1px 1px 0px 1px;
     font-size: 1.5rem;
     cursor: pointer;
 

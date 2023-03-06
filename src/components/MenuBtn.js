@@ -1,7 +1,7 @@
 export default function MenuBtn({category}) {
   return(
     <nav>
-      <button>test</button>
+      <button className="active">test</button>
     </nav>
   )
 }
