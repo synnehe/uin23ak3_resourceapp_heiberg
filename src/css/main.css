@@ -1,5 +1,138 @@
+* {
+  font-family: Helvetica, sans-serif, Arial;
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 0%, 44%);
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  border: solid;
+  border-color: hsl(0, 0%, 82%);
+  border-width: 1px;
+  width: 65%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+header h1 {
+  padding-left: 2rem;
+}
+
+h2 {
+  padding: 1.5rem 1rem;
+}
+
 main {
-  color: pink;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 65%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+nav button {
+  margin-right: 1rem;
+  background: hsl(0, 0%, 95%);
+  padding: 1rem 1rem;
+  border-left: solid;
+  border-top: solid;
+  border-right: solid;
+  border-color: hsl(0, 0%, 82%);
+  border-width: 1px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav button:hover {
+  background: hsl(0, 0%, 82%);
+}
+
+section {
+  border: solid;
+  border-color: hsl(0, 0%, 82%);
+  border-width: 1px;
+  border-top: 0.4rem solid hsl(183, 74%, 59%);
+  width: 65%;
+}
+
+#description, #resource-list {
+  padding: 0 1rem 1rem 1rem;
+}
+
+#resource-list {
+  list-style: inside;
+}
+#resource-list li {
+  padding-bottom: 0.5rem;
+}
+#resource-list li a {
+  color: hsl(183, 74%, 59%);
+}
+
+.active, .active:hover {
+  transition: ease-in-out 0.2s;
+  background: hsl(183, 74%, 59%);
+  color: rgb(245, 245, 245);
+  border-color: hsl(183, 74%, 59%);
+}
+
+@media only screen and (max-width: 1250px) {
+  nav {
+    width: 95%;
+  }
+  section {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 860px) {
+  nav button {
+    margin-right: 0.3rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 670px) {
+  header {
+    width: 95%;
+    justify-content: center;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 2rem;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  nav button {
+    margin-right: 0;
+    flex-basis: 100%;
+    height: 55px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header {
+    width: 95%;
+    margin: 1rem 0 1rem 0;
+    height: 70px;
+  }
+  header h1 {
+    padding: 0;
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
