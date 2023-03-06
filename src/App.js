@@ -6,13 +6,13 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <>
+    <body>
     <Header/>
     <main>
       <MenuBtn/>
       <Content/>
     </main>
-    </>
+    </body>
   );
 }
 
