@@ -1,7 +1,7 @@
 export default function Header({title}) {
   return(
     <header>
-      <h1>{title}</h1>
+      <h1>Ressursarkiv</h1>
     </header>
   )
 }
