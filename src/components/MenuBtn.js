@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 export default function MenuBtn({cat}) {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState("1")
 
   const toggleActive = (event) => {
     setActive(event.target.id)
@@ -16,7 +16,7 @@ export default function MenuBtn({cat}) {
 
   return(
       <nav>
-        <Link to={"html"}><button id={1} className={active === "1" ? "active" : "null"} onClick={toggleActive}>HTML</button></Link>
+        <Link to={"html"}><button id={1} className={active === "1"? "active" : "null"} onClick={toggleActive}>HTML</button></Link>
         <Link to={"css"}><button id={2} className={active === "2" ? "active" : "null"} onClick={toggleActive}>CSS</button></Link>
         <Link to={"javascript"}><button id={3} className={active === "3" ? "active" : "null"} onClick={toggleActive}>JavaScript</button></Link>
         <Link to={"react"}><button id={4} className={active === "4" ? "active" : "null"} onClick={toggleActive}>React</button></Link>
