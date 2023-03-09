@@ -87,7 +87,7 @@ section {
   border-color: hsl(183, 74%, 59%);
 }
 
-@media only screen and (max-width: 1250px) {
+@media (max-width: 1250px) {
   nav {
     width: 95%;
   }
@@ -95,15 +95,18 @@ section {
     width: 95%;
   }
 }
-@media only screen and (max-width: 860px) {
-  nav button {
-    margin-right: 0.3rem;
-    height: 80px;
+@media (max-width: 860px) {
+  nav {
     display: flex;
+    flex-direction: column;
+  }
+  nav * {
+    width: 100%;
     align-items: center;
+    text-decoration: none;
   }
 }
-@media only screen and (max-width: 670px) {
+@media (max-width: 670px) {
   header {
     width: 95%;
     justify-content: center;
@@ -122,7 +125,7 @@ section {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   header {
     width: 95%;
     margin: 1rem 0 1rem 0;
@@ -131,6 +134,9 @@ section {
   header h1 {
     padding: 0;
     font-size: 1.5rem;
+  }
+  #resource-list li a {
+    font-size: 1rem;
   }
 }
 
